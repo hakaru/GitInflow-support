@@ -1,0 +1,11 @@
+title: GitInflow Support
+description: Support page for GitInflow - GitHub Issue Kanban Client for iOS
+theme: jekyll-theme-minimal
+
+collections:
+  posts_en:
+    output: true
+    permalink: /blog/en/:name/
+  posts_ja:
+    output: true
+    permalink: /blog/ja/:name/

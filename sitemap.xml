@@ -1,0 +1,21 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ '/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/index-ja' | absolute_url }}</loc></url>
+  <url><loc>{{ '/privacy' | absolute_url }}</loc></url>
+  <url><loc>{{ '/privacy-ja' | absolute_url }}</loc></url>
+  <url><loc>{{ '/changelog' | absolute_url }}</loc></url>
+  <url><loc>{{ '/changelog-ja' | absolute_url }}</loc></url>
+  <url><loc>{{ '/manual/en/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/manual/ja/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/blog/en/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/blog/ja/' | absolute_url }}</loc></url>
+  {% for post in site.posts_en %}
+  <url><loc>{{ post.url | absolute_url }}</loc></url>
+  {% endfor %}
+  {% for post in site.posts_ja %}
+  <url><loc>{{ post.url | absolute_url }}</loc></url>
+  {% endfor %}
+</urlset>
