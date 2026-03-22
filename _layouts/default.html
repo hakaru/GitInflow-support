@@ -32,22 +32,27 @@
         <p><small>GitHub Issue Kanban Client</small></p>
       </div>
       <nav>
+        {% if page.lang == 'ja' %}
         <ul>
-          <li><strong>EN</strong></li>
-          <li><a href="{{ '/' | relative_url }}">Support</a></li>
-          <li><a href="{{ '/manual/en/' | relative_url }}">Manual</a></li>
-          <li><a href="{{ '/changelog' | relative_url }}">Changelog</a></li>
-          <li><a href="{{ '/privacy' | relative_url }}">Privacy Policy</a></li>
-          <li><a href="{{ '/blog/en/' | relative_url }}">Blog</a></li>
-        </ul>
-        <ul>
-          <li><strong>JA</strong></li>
           <li><a href="{{ '/index-ja' | relative_url }}">サポート</a></li>
           <li><a href="{{ '/manual/ja/' | relative_url }}">マニュアル</a></li>
           <li><a href="{{ '/changelog-ja' | relative_url }}">更新履歴</a></li>
           <li><a href="{{ '/privacy-ja' | relative_url }}">プライバシーポリシー</a></li>
           <li><a href="{{ '/blog/ja/' | relative_url }}">ブログ</a></li>
         </ul>
+        <hr>
+        <p><small><a href="{{ '/' | relative_url }}">🌐 English</a></small></p>
+        {% else %}
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Support</a></li>
+          <li><a href="{{ '/manual/en/' | relative_url }}">Manual</a></li>
+          <li><a href="{{ '/changelog' | relative_url }}">Changelog</a></li>
+          <li><a href="{{ '/privacy' | relative_url }}">Privacy Policy</a></li>
+          <li><a href="{{ '/blog/en/' | relative_url }}">Blog</a></li>
+        </ul>
+        <hr>
+        <p><small><a href="{{ '/index-ja' | relative_url }}">🌐 日本語</a></small></p>
+        {% endif %}
       </nav>
       <hr>
       <p><small><a href="https://github.com/hakaru">hakaru apps</a></small></p>
