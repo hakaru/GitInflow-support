@@ -50,6 +50,11 @@ Done タブで Issue カードを右にスワイプして **戻す（Retreat）*
 
 ---
 
+## バグ報告・機能要望
+
+- [バグを報告する](https://github.com/hakaru/GitInflow-support/issues/new?template=bug_report.yml)
+- [機能を要望する](https://github.com/hakaru/GitInflow-support/issues/new?template=feature_request.yml)
+
 ## お問い合わせ
 
 ご質問、フィードバック、サポートが必要な場合:

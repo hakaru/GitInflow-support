@@ -1,0 +1,78 @@
+name: Bug Report / バグ報告
+description: Report a bug in GitInflow / GitInflow のバグを報告する
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill in the details below.
+        バグ報告ありがとうございます！以下の情報をご記入ください。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description / バグの説明
+      description: What happened? / 何が起きましたか？
+      placeholder: |
+        Describe the bug clearly.
+        バグの内容を明確に記述してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce / 再現手順
+      description: How can we reproduce the bug? / どうすればバグを再現できますか？
+      placeholder: |
+        1. Go to '...'
+        2. Tap on '...'
+        3. Swipe '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior / 期待される動作
+      description: What should have happened? / 本来どう動くべきでしたか？
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior / 実際の動作
+      description: What actually happened? / 実際にはどうなりましたか？
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version / アプリバージョン
+      description: Check Settings tab / 設定タブで確認できます
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device & iOS Version / デバイスとiOSバージョン
+      placeholder: "iPhone 15 Pro, iOS 18.4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / スクリーンショット
+      description: If applicable, add screenshots. / 可能であればスクリーンショットを添付してください。
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context / 補足情報
+      description: Any other context about the problem. / その他の関連情報があれば。

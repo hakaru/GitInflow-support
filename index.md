@@ -50,6 +50,11 @@ In the Done tab, swipe the card to the right and tap **Retreat**, or long-press 
 
 ---
 
+## Report a Bug or Request a Feature
+
+- [Report a Bug](https://github.com/hakaru/GitInflow-support/issues/new?template=bug_report.yml)
+- [Request a Feature](https://github.com/hakaru/GitInflow-support/issues/new?template=feature_request.yml)
+
 ## Contact
 
 If you have questions, feedback, or need help:

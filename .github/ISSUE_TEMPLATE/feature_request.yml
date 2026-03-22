@@ -1,0 +1,60 @@
+name: Feature Request / 機能要望
+description: Suggest a new feature for GitInflow / GitInflow の新機能を提案する
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your suggestion! We'd love to hear your ideas.
+        ご提案ありがとうございます！アイデアをぜひお聞かせください。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 解決したい課題
+      description: What problem does this feature solve? / この機能はどんな課題を解決しますか？
+      placeholder: |
+        I'm always frustrated when...
+        〇〇するとき、いつも不便に感じています...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / 提案する解決策
+      description: How would you like it to work? / どのように動作してほしいですか？
+      placeholder: |
+        I'd like to be able to...
+        〇〇できるようにしてほしい...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered / 検討した代替案
+      description: Any alternative solutions you've considered? / 他に考えた方法はありますか？
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority / 優先度
+      description: How important is this feature to you? / この機能はどの程度重要ですか？
+      options:
+        - Nice to have / あると嬉しい
+        - Important / 重要
+        - Critical / 必須
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Mockups / Screenshots / モックアップ・スクリーンショット
+      description: If you have visual ideas, share them here. / ビジュアルのアイデアがあれば添付してください。
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context / 補足情報
